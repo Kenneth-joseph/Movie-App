@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d88e4c3-64e6-46ec-aa5e-cafc035e7363" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/movie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/movie_test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/request.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,5 +95,9 @@
       <screen x="0" y="27" width="1920" height="1010" />
     </state>
     <state x="616" y="359" key="com.intellij.ide.util.TipDialog/0.27.1920.1010@0.27.1920.1010" timestamp="1576853576689" />
+    <state x="138" y="248" width="672" height="678" key="search.everywhere.popup" timestamp="1576857467046">
+      <screen x="0" y="27" width="1920" height="1010" />
+    </state>
+    <state x="138" y="248" width="672" height="678" key="search.everywhere.popup/0.27.1920.1010@0.27.1920.1010" timestamp="1576857467046" />
   </component>
 </project>
