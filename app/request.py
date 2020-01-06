@@ -1,5 +1,5 @@
 from app import app
-from models import movie
+from .models import movie
 import urllib.request, json
 
 Movie = movie.Movie
@@ -30,7 +30,7 @@ def get_movies(category):
 
 
 def process_results(movie_list):
-    '''
+    """
     Function  that processes the movie result and transform them to a list of Objects
 
     Args:
@@ -38,18 +38,18 @@ def process_results(movie_list):
 
     Returns :
         movie_results: A list of movie objects
-    '''
-    movie_results=[] #empty list for appending the movie data found from the response
+    """
+    movie_results = []  # empty list for appending the movie data found from the response
     for movie_item in movie_list:
-        id=movie_item.get('id')
-        title=movie_item.get('original_title')
-        overview=movie_item.get('overview')
-        poster=movie_item.get('poster_path')
-        vote_average= movie_item.get('vote_average')
-        vote_count= movie_item.get('vote_count')
+        id = movie_item.get('id')
+        title = movie_item.get('original_title')
+        overview = movie_item.get('overview')
+        poster = movie_item.get('poster_path')
+        vote_average = movie_item.get('vote_average')
+        vote_count = movie_item.get('vote_count')
 
         if poster:
-            movie_object= Movie(id,title,overview,poster,vote_average,vote_count)
+            movie_object = Movie(id, title, overview, poster, vote_average, vote_count)
 
             movie_results.append(movie_object)
 

@@ -26,7 +26,7 @@ class MovieTest(unittest.TestCase):
         self.assertEqual(self.new_movie.overview, "a thrilling new python series")
         self.assertEqual(self.new_movie.poster, "https://image.tmdb.org/t/p/w500/khsjha27hbs")
         self.assertEqual(self.new_movie.vote_average, 8.5)
-        self.assertEqual(self.new_movie.title, 129993)
+        self.assertEqual(self.new_movie.vote_count, 129993)
 
 
 if __name__ == '__main__':

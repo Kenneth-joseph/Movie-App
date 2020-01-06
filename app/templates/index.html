@@ -9,6 +9,14 @@
         {% endif %}
     </head>
     <body>
+
+        Popular movie section 
+        <h3> Popular Movies</h3>
+         <ul>
+            {% for popular_movie in popular %}
+                <li>{{ popular_movie.title}}</li>
+            {% endfor %}
+        </ul>
 <p>the info is{{message}}</p>
     </body>
 </html>
