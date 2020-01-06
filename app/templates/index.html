@@ -17,6 +17,22 @@
                 <li>{{ popular_movie.title}}</li>
             {% endfor %}
         </ul>
+        Up-coming mvies section
+
+        <h3> Up coming Movies</h3>
+         <ul>
+            {% for upcoming_movies in upcoming %}
+                <li>{{ upcoming_movies.title}}</li>
+            {% endfor %}
+        </ul>
+
+        Now-playing movies section      
+        <h3>Now-playing Movies</h3>
+         <ul>
+            {% for now_showing_movie in now_playing %}
+                <li>{{ now_showing_movie.title}}</li>
+            {% endfor %}
+        </ul>
 <p>the info is{{message}}</p>
     </body>
 </html>

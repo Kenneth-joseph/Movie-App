@@ -9,10 +9,13 @@ def index():
      View root page function that returns the index page and its data
     """
     popular_movies = get_movies('popular')
-    print(popular_movies)
+    upcoming_movie= get_movies('upcoming')
+    now_showing_movie= get_movies('now_playing')
+    # print(popular_movies)
+
     title = 'Home-welcome to the best movie review website online'
     message = "hello kent"
-    return render_template('index.html', message=message, title=title, popular=popular_movies)
+    return render_template('index.html', message=message, title=title, popular=popular_movies,upcoming_movie=upcoming_movie,now_showing_movie=now_showing_movie)
 
 
 @app.route('/movie/<int:movie_id>')
