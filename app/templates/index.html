@@ -1,38 +1,25 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best Movie Review website </title>
-        {% endif %}
-    </head>
-    <body>
+{% import 'macros.html' as macro%}
+{% extends 'base.html'%}
+
+    {%block content%}
 
         Popular movie section 
         <h3> Popular Movies</h3>
          <ul>
-            {% for popular_movie in popular %}
-                <li>{{ popular_movie.title}}</li>
-            {% endfor %}
+            {{ macro.displayMovieList(popular)}}
         </ul>
-        Up-coming mvies section
+
+        Up-coming movies section
 
         <h3> Up coming Movies</h3>
          <ul>
-            {% for upcoming_movies in upcoming %}
-                <li>{{ upcoming_movies.title}}</li>
-            {% endfor %}
+            {{ macro.displayMovieList(upcoming)}}
         </ul>
 
         Now-playing movies section      
         <h3>Now-playing Movies</h3>
          <ul>
-            {% for now_showing_movie in now_playing %}
-                <li>{{ now_showing_movie.title}}</li>
-            {% endfor %}
+            {{ macro.displayMovieList(now_showing)}}
         </ul>
-<p>the info is{{message}}</p>
-    </body>
-</html>
+    <p>the info is{{message}}</p>
+    {%endblock%}
